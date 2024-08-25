@@ -13,6 +13,7 @@ const HomePage = () => {
       fetch("http://localhost:8080/weather")
       .then(response => response.json())
       .then(data => setWeatherData(data))
+      .catch(error => console.log("error fetching weather data: ", error))
   }, [])
 
   if (!weatherData) {
