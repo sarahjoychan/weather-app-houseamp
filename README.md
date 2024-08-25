@@ -13,5 +13,7 @@ This is a simple Weather Forecast Application that displays current weather data
 4. Navigate to the "spring" directory: `cd spring`
 
 5. Run `./mvnw spring-boot:run`
+//This runs the SpringBoot backend using a Maven wrapper.
 
-6. Once the react app and spring boot backend are running, view the application on `http://localhost:3000`
+6. Once the frontend react app and spring boot backend are running, you can view the application on `http://localhost:3000`
+//The React frontend will fetch data from the SpringBoot backend and display it in the center of the screen.
