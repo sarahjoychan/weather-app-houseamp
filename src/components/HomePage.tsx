@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 interface WeatherData {
-  temp: string;
+  temperature: string;
   humidity: string;
-  conditions: string;
+  condition: string;
 }
 
 const HomePage = () => {
@@ -21,7 +21,12 @@ const HomePage = () => {
   }
   
   return (
-    <div></div>
+    <div>
+      <h1>Current Weather</h1>
+      <p>Temperature: {weatherData.temperature}</p>
+      <p>Humidity: {weatherData.humidity}</p>
+      <p>Condition: {weatherData.condition}</p>
+    </div>
   );
 
 }

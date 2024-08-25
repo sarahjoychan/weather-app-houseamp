@@ -1,11 +1,13 @@
 package com.example.weatherapp;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WeatherController {
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/weather")
     public WeatherData getWeather() {
         return new WeatherData("72°F", "45%", "Sunny");
